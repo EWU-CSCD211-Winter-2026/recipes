@@ -1,5 +1,6 @@
 
-package demo2.best;
+package test;
+import model.*;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -15,7 +16,7 @@ public class AppReadFile {
 		List<Recipe> recipes = new ArrayList<>();
 
 
-		try (BufferedReader br = new BufferedReader(new FileReader("recipes.txt"))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("data/recipes.txt"))) {
 			
 			String line;
 			

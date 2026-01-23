@@ -1,4 +1,4 @@
-package demo2.best;
+package model;
 
 public class BakingBehavior implements IBehavior {
 	
