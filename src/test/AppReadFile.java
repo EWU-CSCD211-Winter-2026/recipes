@@ -33,12 +33,16 @@ public class AppReadFile {
 					Recipe r = new Recipe(name, ingredients);
 					
 					IBehavior behavior = null;
+					IBehavior behavior1 = null;
 					
 					if (name.equals("Fried Rice")) {
 						behavior = new BakingBehavior(20, 300);
 						r.addBehavior(behavior);
 					
 					} else if (name.equals("Cake")) {
+						behavior1 = new MixingBehavior(30);
+						r.addBehavior(behavior1);
+
 						behavior = new BakingBehavior(20, 300);
 						r.addBehavior(behavior);
 						
@@ -46,6 +50,9 @@ public class AppReadFile {
 						r.addBehavior(behavior);
 						
 					} else {
+						behavior1 = new MixingBehavior(60);
+						r.addBehavior(behavior1);
+						
 						behavior = new ChillingBehavior(30);
 						r.addBehavior(behavior);
 					}
