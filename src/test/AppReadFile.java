@@ -44,6 +44,10 @@ public class AppReadFile {
 						
 						behavior = new ChillingBehavior(30);
 						r.addBehavior(behavior);
+
+                    } else if (name.equals("Smoothie")) {
+                        behavior = new FreezingBehavior(32);
+                        r.addBehavior(behavior);
 						
 					} else {
 						behavior = new ChillingBehavior(30);
