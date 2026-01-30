@@ -14,7 +14,7 @@ public class ChillingBehavior implements IBehavior {
 
 	@Override
 	public void recipeBehavior(Recipe r) {
-		System.out.println("Chilling recipoe " + r.format('|') + " for " + getChillingTime() +  " minutes.");
+		System.out.println("Chilling recipe [" + r.format('|') + "] for " + getChillingTime() +  " minutes.");
 	}
 
 }
