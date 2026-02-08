@@ -20,7 +20,7 @@ public class BakingBehavior implements IBehavior {
 
 	@Override
 	public void recipeBehavior(Recipe r) {
-		System.out.println("Baking recipe [" + r.format('|') + "] for " + getBakingTime() + " minutes at " + getOvenTemp() + " degrees F");
+		System.out.println("Baking recipe [" + r.format('|') + "] for " + getBakingTime() + " minutes at " + getOvenTemp() + " degrees F.");
 	}
 
 }
